@@ -167,7 +167,7 @@ contract WTS {
         return true;
     }
 
-    // Pack all the pairing checks together via a randomized linear combination
+    // 随机组合技术进一步优化Pack all the pairing checks together via a randomized linear combination
     function verify_optimized(
         BN254.G2Point memory message_hash, // We assume the verifier is directly fed with some hash value H(m)
         uint256 t, // Minimum threshold

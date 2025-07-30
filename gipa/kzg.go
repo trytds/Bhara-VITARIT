@@ -51,7 +51,7 @@ func (k *KZG) verify(com, pf bls.G1Affine, x, y fr.Element) bool {
 	return true
 }
 
-// FIXME: Not sure we will need this in our implementation
+// FIXME: Not sure we will need this in our implementation 批量验证部分
 func (k *KZG) batch_verify(comms, pfs []bls.G1Affine, xs, ys []fr.Element) bool {
 	return true
 }

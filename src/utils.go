@@ -14,7 +14,7 @@ var (
 	domains = make(map[uint64]*fft.Domain)
 )
 
-type Message []byte
+//type Message []byte
 
 // This function returns the lagrange coefficients for a given set of indices when evaluated at a specific point
 func GetLagAtSlow(at fr.Element, indices []fr.Element) []fr.Element {
